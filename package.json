@@ -1,0 +1,23 @@
+{
+  "name": "webprogramming_inclass",
+  "version": "1.0.0",
+  "description": "Repository to follow along with the in class coding",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./server/index.js",
+    "test": "nodemon ./server/index.js --watch server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JKoone/WebProgramming_InClass.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
+    "dotenv": "^6.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
