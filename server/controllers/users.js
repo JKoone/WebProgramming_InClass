@@ -10,17 +10,19 @@ app.get("/", (req, res) => {
     if(err) throw err;
     res.send(data);
   })
-  //conn.query("SELECT * FROM InClass_Person", (err, data) => {
-  //    if(err) throw err;
-  //    res.send(data);
-  //})
-  //res.send([{FirstName: "Fake Person"}]);
+});
+
+app.get("/:id", (req, res) => {
+  userModel.get(req.params.id, (err, data) => {
+    if(err) throw err;
+    res.send(data);
+  })
 });
 
 app.post("/", (req, res) => {
-  userModel.add({}, (err, data) => {
+  userModel.add(req.body, (err, data) => {
     if(err) throw err;
-    //
+    res.send(data);
   })
 })
 
