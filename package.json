@@ -19,7 +19,8 @@
     "vue-router": "^3.0.1",
     "express": "^4.16.4",
     "mysql": "^2.16.0",
-    "dotenv": "^6.2.0"
+    "dotenv": "^6.2.0",
+    "bootstrap": "^4.3.1"
   },
   "devDependencies": {
     "nodemon": "^1.18.10",
@@ -43,7 +44,9 @@
       "plugin:vue/essential",
       "@vue/airbnb"
     ],
-    "rules": {},
+    "rules": {
+      "linebreak-style": 0
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }
